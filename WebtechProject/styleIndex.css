@@ -1,0 +1,167 @@
+html{overflow-y:scroll;
+	background: black;
+	}
+body{margin:20; padding:20;
+}
+.header img {
+height: 200px;
+width: 1500px;
+position: realtive;
+z-index: -1;
+}
+
+h1.vin {
+position: realtive;
+color: white;
+font-family: showcard gothic;
+z-index: 1;
+text-align: left;
+}
+
+h2{
+color: rgb(255, 204, 153);
+font-size: 40px;
+}
+ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+color: rgb(255, 204, 153);
+}
+li {
+    display: inline;
+	color: rgb(255, 204, 153);
+	font-family: showcard gothic;
+	font-size: 30px;
+	padding: 4px;
+}
+div.abc{
+position: absolute;
+top: 140px;
+
+}
+
+a:link    {color:white; background-color:transparent; text-decoration:none}
+a:visited {color:white; background-color:transparent; text-decoration:none}
+a:hover   {color:#D8BFD8; background-color:transparent; text-decoration:none}
+a:active  {color:white; background-color:transparent; text-decoration:none}
+.name,.footer{
+    position: relative;
+    background: #5C97FF;
+    overflow: hidden;
+
+}
+
+.name:before,.footer:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.25;
+    background-image: url(blue.jpg);
+    background-repeat: no-repeat;
+/*
+   background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;*/
+
+}
+
+
+.footer{
+display:block;
+width:100%;
+height:20%;
+
+}
+
+.vincent{
+
+float:left;
+height:70%;
+position:fixed;
+top: 200px;
+}
+.des{
+float:left;
+height:70%;
+width:50%;
+}
+
+
+.bgd{
+z-index:0
+}
+
+
+.des{
+z-index:1;
+float:right;
+position: relative;
+left: 500px;
+}
+
+.back{
+	opacity:0.6;
+	width:98%;
+	height:100%;
+	position:fixed;
+	z-index:-1;
+	top:110;
+	left:0;
+	right:0;
+	padding:10px;
+}
+
+.name{
+font-family: 'Tangerine', serif;
+font-size: 48px;
+}
+
+.nickName{
+font-family: 'Tangerine', serif;
+font-size: 48px;
+color:#5C2E00;
+margin:20px;
+}
+
+.synopsis{
+position:absolute;
+text-align: right;
+top:40px;
+left:520px;
+font-family: 'Tangerine', serif;
+font-size: 48px;
+color:white;
+
+}
+
+
+h3,.synopsis,.nickName{
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 92px;
+  text-align: center;
+  text-transform: uppercase;
+    color: white;
+    letter-spacing: .15em;
+    text-shadow: 
+      1px -1px 0 #5C2E00, 
+      -1px 2px 1px #5C2E00, 
+      -2px 4px 1px #5C2E00, 
+      -3px 6px 1px #5C2E00;
+  opacity:1;
+}
+
+
+.synopsis,.nickName{font-family: 'Tangerine', serif;font-size: 30px;text-shadow: 
+      1px -1px 0 #5C2E00, 
+      -1px 2px 1px #5C2E00;
+
+}

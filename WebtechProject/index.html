@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title> Van Gogh </title> 
+		<link rel="stylesheet" href="styleIndex.css" type="text/css" />
+		<link rel="shortcut icon" href="titleImage.ico" />
+	</head>
+	<body>
+		<header>
+			<div class = "header">
+				
+				<h1 class="vin"> Vincent Willem Van Gogh </h1>
+			</div>
+		</header>
+		<center>
+		<nav>
+			<ul class = "def">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="Gallery2.html">Gallery</a></li>
+				<li><a href="login2.html"> Login </a></li>
+				<li><a href="forum3.html"> Forums </a></li>
+				<li><a href="museums.html"> Museums </a></li>
+				<li><a href="video.html"> Videos </a></li>
+				<li><a href="quiz2.html"> Quiz </a></li>
+			</ul>
+		</nav>
+		</center>
+		</br>
+		</br>
+		</div>
+<div class="abc" >
+
+
+
+
+<img id="aaa" class=back src="imagesIndex/painting1.jpg" name="image" width="800" height="500" />
+
+
+
+
+
+
+
+<img class="vincent" src="imagesIndex/van_gogh1.png" width=50% height=100%>
+<div class="des">
+<p class="nickName"></p>
+<span class="s">
+<p class="synopsis">
+"I dream of a painting and then I paint my dream."</br>
+-vincent Van Gogh
+</p>
+</span>
+</div>
+<script>
+if(localStorage.getItem("username")){
+	var a = document.createElement("div");a.id="logs";
+	a.innerHTML="Welcome "+localStorage.getItem("username");
+	a.style.color = "white";a.style.float="right";
+	var b = document.createElement("a");
+	b.innerHTML="logout";
+	b.style.color = "white";b.style.float="right";
+	b.href="";b.style.fontSize="24px";
+	b.onclick=die;
+	a.style.fontFamily="Tangerine";
+	a.style.fontFamily="serif";
+	a.appendChild(document.createElement("br"));
+	a.appendChild(document.createElement("br"));
+	a.appendChild(b);
+	(document.querySelector(".vin")).appendChild(a);
+}
+function die(){
+	localStorage.setItem("username","");
+	(document.querySelector(".vin")).removeChild(document.getElementById("logs"));
+}
+var image = document.getElementById("aaa");
+var img_array=["images3Index/1.jpg","images3Index/2.jpg", "images3Index/3.jpg", "images3Index/4.jpg" ];
+var index=0;
+function slide()
+{
+
+    document["aaa"].src = img_array[index];
+    index++;
+    if(index>=img_array.length)
+    {
+    index=0;
+    }
+}
+setInterval("slide()",2000);
+</script>
+
+
+</body>
+</html>

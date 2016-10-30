@@ -1,0 +1,121 @@
+
+html{overflow-y:scroll;
+	background: black;
+	}
+body{margin:20; 
+padding:30;
+}
+ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+color: rgb(255, 204, 153);
+font-family: showcard gothic;
+}
+li {
+    display: inline;
+	color: rgb(255, 204, 153);
+	font-family: showcard gothic;
+	font-size: 30px;
+	padding: 4px;
+}
+
+a:link    {color:white; background-color:transparent; text-decoration:none}
+a:visited {color:white; background-color:transparent; text-decoration:none}
+a:hover   {color:#D8BFD8; background-color:transparent; text-decoration:none}
+a:active  {color:white; background-color:transparent; text-decoration:none}
+.header img {
+height: 200px;
+width: 1500px;
+position: realtive;
+z-index: -1;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+}
+table{
+	position:relative ;
+	bottom: 1000 px;
+	left: 120px;
+	border: 3px solid ;
+    border-color: rgb(214, 214, 214);
+	}
+ td {
+	border: 1px solid ;
+    border-color: rgb(214, 214, 214);
+}
+
+table img {  
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+table img:hover {
+  border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+     }
+table img:hover {
+       -webkit-transform: rotate(-10deg);
+          -moz-transform: rotate(-10deg);
+               -o-transform: rotate(-10deg);
+            -ms-transform: rotate(-10deg);
+                }
+div.gal{display:block; width:10	0%; margin:0; text-align:center;
+ border-bottom:1px solid #3B3B3B; text-align:center;
+ }
+
+div.abc{ position: relative;
+top:20px;
+}
+
+h1.vin {
+position: realtive;
+color: white;
+font-family: showcard gothic;
+z-index: 1;
+text-align: left;
+}
+
+li {
+color: white;
+font-family: Footlight MT Light;
+font-size: 1;
+display: inline;
+
+}
+#gallery{padding:30px 0;}
+#gallery ul{display:block; width:960px; height:500px; margin:0; padding:0; list-style:none;}
+#gallery li{display:block; float:left; width:184px; height:110px; margin:10px 10px 0 0; padding:0;}
+#gallery li.last{margin-right:0;}
+#gallery .placeholder{display:block; float:left; width:950px; height:370px; margin:0; padding:4px; border:3px solid rgb(214, 214, 214); text-indent:-9999px; background:4px 4px no-repeat;}
+
+#gallery a.swap:link, #gallery a.swap:visited, #gallery a.swap:hover{display:block; width:174px; height:100px; margin:0; padding:4px; text-align:center; border:1px solid rgb(214, 214, 214);}
+#gallery a.swap img{width:174px; height:100px;}
+#gallery a.swap span img{width:953px; height:377px;}
+a.swap:hover{white-space:normal;}
+a.swap:link span, a.swap:visited span, a.swap:active span{visibility:hidden; position:absolute; top:36px; left:195px; width:957px; height:377px;}
+a.swap:active span, a.swap:hover span, a.swap:focus span{visibility:visible;}
+a.swap:active img, a.swap:focus img{position:relative; z-index:50;}
+
+div.footer img{
+height: 200px;
+width: 1500px;
+position: realtive;
+z-index: -1;
+}
+a{
+color: rgb(255, 204, 153);
+	font-family: showcard gothic;
+	font-size: 30px;
+}
+

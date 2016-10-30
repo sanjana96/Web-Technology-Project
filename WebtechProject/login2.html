@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login</title>
+		<link rel="shortcut icon" href="titleImage.ico" />
+		<style type="text/css">
+			.div1{
+				width:40%;
+				position:absolute;
+				top:2%;
+				left:30%;
+				border:3px solid black;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="div2">
+			<canvas id="c" width="1500px" height="700px">
+			</canvas>
+		</div>
+		<div class="div1">
+		<h1>Login Page</h1>
+		<form action="" method="POST">
+		<p>Back to the world of Van Gogh:</p>
+
+		<label>Username : </label>
+		<input type="text" id="u" name="username"><br/></br>
+
+		<label>Password : </label>
+		<input type="password" id="p" name="password"><br/></br>
+		<a href="ano.html" target="_blank">Forgot your password?</a>
+		<input type="checkbox" name="remember" value="Y" checked=True>Keep me signed in.</input><br/></br>
+		<input type="Submit" onclick="login()" value="Sign In">
+		</form><br/><br/><hr/><br/></br>
+
+
+
+		<form action="signup.php" method="POST">
+		<h1>New Here?</h1>
+		<h3>Join the world of Art! Let's Begin:</h3><br/></br>
+
+		<p>Enter your details to start an account here:</p>		
+		<label>Enter your username : </label>
+		<input type="text" id="um" name="usnm"><br/></br>
+		<label>Select your date of birth : </label>
+		<input type="date" name = "d"><br/></br>
+		<label>Enter your email id : </label>
+		<input type="text" name="eid"><br/></br>
+		<label>Enter your password : </label>
+		<input type="password" id="psd" name="psd1"><br/></br>
+		<label>Re-enter your password : </label>
+		<input type="password" name="psd2"><br/><br/>
+		<input type="Submit" onclick="sub()" value="Create Account"><br/></br>
+		<input type="Reset">
+		</form>
+		</div>
+
+		<script type="text/javascript">
+			function login(){
+				var a = document.getElementById("u").value;
+				var b = document.getElementById("p").value;
+				if(!!localStorage.getItem("noUsers")){
+					for(i=1;i<=localStorage.getItem("noUsers");i++){
+						if(!((localStorage.getItem("user"+i)).localeCompare(a))	&& (!(localStorage.getItem("psd"+i)).localeCompare(b))){
+							localStorage.setItem("username",a);
+							window.location.assign("file:///home/sanjana/WebTech/FINALMINI/final/index.html");
+							break;
+						}
+					}
+					if(i==(localStorage.getItem("noUsers")+1)){
+						window.alert("Incorrect username or password!");
+						//location.reload();
+					}
+				}
+				else{
+					window.alert("Incorrect username or password!");
+				}
+			}
+			function sub(){
+				if(localStorage.noUsers)
+					localStorage.noUsers = parseInt(localStorage.noUsers)+1;
+				else
+					localStorage.noUsers = 1;
+				var a = document.getElementById("um").value;
+				var b = document.getElementById("psd").value;
+				localStorage.setItem("user"+localStorage.noUsers,a);
+				localStorage.setItem("psd"+localStorage.noUsers,b);
+				window.location.assign("localhost//index.html");
+			}
+			var canv = document.getElementById("c");
+			var ctx = canv.getContext("2d");
+			var im = document.createElement("img");
+			im.src = "painty1.jpg"
+			var x1=parseInt(Math.random()*1380);
+			var x2=parseInt(Math.random()*1380);
+			var x3=parseInt(Math.random()*1380);
+			var y1=parseInt(Math.random()*580);
+			var y3=parseInt(Math.random()*580);
+			var y2=parseInt(Math.random()*580);
+			var x4=parseInt(Math.random()*1380);
+			var y4=parseInt(Math.random()*580);
+			var x5=parseInt(Math.random()*1380);
+			var y5=parseInt(Math.random()*580);
+			var x6=parseInt(Math.random()*1380);
+			var y6=parseInt(Math.random()*580);
+			var x7=parseInt(Math.random()*1380);
+			var y7=parseInt(Math.random()*580);
+			var x8=parseInt(Math.random()*1380);
+			var y8=parseInt(Math.random()*580);
+			var x9=parseInt(Math.random()*1380);
+			var y9=parseInt(Math.random()*580);
+			var i=0;
+			var j=0;
+			var tt = setInterval(an, 50);
+			function an()
+			{
+				if(i==480)
+				{i=0;
+				j += 120;
+				if(j==480)
+				{
+					x1=parseInt(Math.random()*1380);
+					x2=parseInt(Math.random()*1380);
+					x3=parseInt(Math.random()*1380);
+					y1=parseInt(Math.random()*580);
+					y3=parseInt(Math.random()*580);
+					y2=parseInt(Math.random()*580);
+					x4=parseInt(Math.random()*1380);
+					y4=parseInt(Math.random()*580);
+					x5=parseInt(Math.random()*1380);
+					y5=parseInt(Math.random()*580);
+					x6=parseInt(Math.random()*1380);
+					y6=parseInt(Math.random()*580);
+					x7=parseInt(Math.random()*1380);
+					y7=parseInt(Math.random()*580);
+					x8=parseInt(Math.random()*1380);
+					y8=parseInt(Math.random()*580);
+					x9=parseInt(Math.random()*1380);
+					y9=parseInt(Math.random()*580);
+				}}
+				if(j==480)
+				{j=0;}
+				ctx.drawImage(im, i, j, 120, 120, x1 , y1, 120, 120);
+				ctx.drawImage(im, i, j, 120, 120, x2 , y2, 120, 120);
+				ctx.drawImage(im, i, j, 120, 120, x3 , y3, 120, 120);
+				ctx.drawImage(im, i, j, 120, 120, x4 , y4, 120, 120);
+				ctx.drawImage(im, i, j, 120, 120, x5 , y5, 120, 120);
+				ctx.drawImage(im, i, j, 120, 120, x6 , y6, 120, 120);
+				ctx.drawImage(im, i, j, 120, 120, x7 , y7, 120, 120);
+				ctx.drawImage(im, i, j, 120, 120, x8 , y8, 120, 120);
+				ctx.drawImage(im, i, j, 120, 120, x9 , y9, 120, 120);
+				i += 120;
+			}
+		</script>
+	</body>
+</html>

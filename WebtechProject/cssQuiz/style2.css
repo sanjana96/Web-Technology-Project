@@ -1,0 +1,74 @@
+html{overflow-y:scroll;
+	background: black;
+	}
+body{margin:20; padding:20;
+}
+.header img {
+height: 200px;
+width: 1500px;
+position: realtive;
+z-index: -1;
+}
+
+h1.vin {
+position: realtive;
+color: white;
+font-family: showcard gothic;
+z-index: 1;
+text-align: left;
+}
+
+h2{
+color: rgb(255, 204, 153);
+font-size: 40px;
+}
+ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+color: rgb(255, 204, 153);
+}
+li {
+    display: inline;
+	color: rgb(255, 204, 153);
+	font-family: showcard gothic;
+	font-size: 30px;
+	padding: 4px;
+}
+#abc{
+position: absolute;
+left: 100px;
+font-family: Verdana;
+color: rgb(255, 204, 153);
+}
+
+a:link    {color:white; background-color:transparent; text-decoration:none}
+a:visited {color:white; background-color:transparent; text-decoration:none}
+a:hover   {color:#D8BFD8; background-color:transparent; text-decoration:none}
+a:active  {color:white; background-color:transparent; text-decoration:none}
+
+#submit, #reset {
+    background-color: rgb(153, 51, 0);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: #fff;
+    font-family: 'showcard gothic';
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+}
+
+
+
+#submit:hover {
+    border: none;
+    background:black;
+    box-shadow: 0px 0px 1px #777;
+}
+#reset:hover {
+    border: none;
+    background:black;
+    box-shadow: 0px 0px 1px #777;
+}
